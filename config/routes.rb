@@ -2,6 +2,7 @@ Pinterest::Application.routes.draw do
   resources :pins
 
   devise_for :users
+  get "users/:id/wall" => 'users#wall'
   get "pages/index"
   get "pages/nosotros"
   get "pages/precios"

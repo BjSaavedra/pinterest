@@ -1,3 +1,4 @@
 class Pin < ActiveRecord::Base
-	mount_uploader :avatar, AvatarUploader
+	belongs_to :user 
+	mount_uploader :photo, AvatarUploader
 end
